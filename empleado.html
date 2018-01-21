@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width">
+	<title>HR Project</title>
+
+	<!-- Stylesheet -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/component.css">
+	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+  <link rel="stylesheet" type="text/css" href="css/sweetalert.css"/>
+  <link rel="stylesheet" type="text/css" href="css/loaders.min.css"/>
+
+	<!-- Font -->
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900' rel='stylesheet' type='text/css'>
+
+		<!--[if IE]>
+  		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  		<![endif]-->
+
+  	</head>
+
+  	<body>
+  		<header class="header">
+  			<div class="row">
+
+  				<nav class="navbar navbar-default">
+  					<div class="container-fluid">
+  						<div class="col-md-4">
+  							<div class="navbar-header">
+
+  								<!-- Brand --> 
+  								<a class="navbar-brand" href="home.html">
+										<span class="logo-title">HR project</span>
+									</a>
+  							</div>
+  						</div>
+  						<div class="col-md-8">
+
+  							<!-- Menu responsive-->
+
+  							<div id="dl-menu" class="dl-menuwrapper">
+  								<button class="dl-trigger">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+  								<ul class="dl-menu">
+                    <li><a href="home.html">Home</a></li>
+  									<li><a href="#">Perfil</a></li>
+  									<li>
+  										<a href="#">Administración</a>
+  										<ul class="dl-submenu">
+  											<li><a href="#">Crear empresa</a></li>
+  											<li><a href="empleado.html">Crear empleado</a></li>
+  											<li><a href="nomina.html">Comprobante de Nómina</a></li>
+  										</ul>
+  									</li>
+  								</ul>
+  							</div><!-- /dl-menuwrapper -->
+
+  							<div class="collapse navbar-collapse" id="menu">
+  								<ul class="nav navbar-nav">
+                    <li class="active" ><a href="home.html">Home <span class="sr-only">(current)</span></a></li>
+  									<li><a href="#">Perfil</a></li>
+  									<li class="dropdown">
+  										<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Administración </a>
+  										<ul class="dropdown-menu" role="menu">
+  											<li><a href="#">Crear empresa</a></li>
+  											<li><a href="empleado.html">Crear empleado</a></li>
+											<li><a href="nomina.html">Comprobante de Nómina</a></li>
+  										</ul>
+  									</li>
+  								</ul>
+  							</div>
+  						</div>
+  					</div>
+  				</nav>
+
+
+  			</header>
+  			<section id="employee">
+
+  				<div class="container">
+
+
+  					<div class="employee">
+  						<div class="row">
+  							<div class="col-md-12">
+  								<h1>Crear empleado</h1>
+  							</div>
+  						</div>
+
+  						<form action="" method="POST" id="employeeform">
+
+  							<div class="containerform">
+
+  								<div class="col-sm-6 columnf1">
+
+
+  									<div class="form-group">
+
+  										<span class="input">
+  											<input class="input_field input_field_styled form-control datepicker" type="date"  min="1975-12-31" id="BEGDA" name="BEGDA" data-required-message="Fecha requerida"   />
+  											<label class="input_label input_label_styled" for="BEGDA">
+  												<span class="input_label_content input_label_content_styled">Fecha de Contratación</span>
+  											</label>
+  										</span>
+  									</div>
+  									<div class="clearfix">&nbsp;</div>
+
+  									<div class="form-group">
+  										<span class="input">
+  											<input class="input_field input_field_styled form-control" type="text" id="NACHN" name="NACHN" data-required-message="Apellido requerido" />
+  											<label class="input_label input_label_styled" for="NACHN">
+  												<span class="input_label_content input_label_content_styled">Primer Apellido</span>
+  											</label>
+  										</span>
+  									</div>
+  									<div class="clearfix">&nbsp;</div>
+
+  									<div class="form-group">
+  										<span class="input">
+  											<input class="input_field input_field_styled form-control" type="text" id="NACH2" name="NACH2" />
+  											<label class="input_label input_label_styled" for="NACH2">
+  												<span class="input_label_content input_label_content_styled">Segundo Apellido</span>
+  											</label>
+  										</span>
+  									</div>
+  									<div class="clearfix">&nbsp;</div>
+
+  									<div class="form-group">
+  										<span class="input">
+  											<input class="input_field input_field_styled form-control" type="text" id="VORNA" name="VORNA" data-required-message="Nombre requerido"  />
+  											<label class="input_label input_label_styled" for="VORNA">
+  												<span class="input_label_content input_label_content_styled">Primer Nombre</span>
+  											</label>
+  										</span>
+  									</div>
+  									<div class="clearfix">&nbsp;</div>
+
+  									<div class="form-group">
+
+  										<span class="input">
+  											<input class="input_field input_field_styled form-control" type="text" id="NAME2" name="NAME2" />
+  											<label class="input_label input_label_styled" for="NAME2">
+  												<span class="input_label_content input_label_content_styled">Segundo Nombre</span>
+  											</label>
+  										</span>
+  									</div>
+  									<div class="clearfix">&nbsp;</div>
+
+  									<div class="form-group">
+
+  										<span class="input">
+  											<input class="input_field input_field_styled form-control datepicker" type="date" min="1945-12-31" id="GBDAT" name="GBDAT" data-required-message="Fecha de nacimiento requerida"  />
+  											<label class="input_label input_label_styled" for="GBDAT">
+  												<span class="input_label_content input_label_content_styled">Fecha de Nacimiento</span>
+  											</label>
+  										</span>
+  									</div>
+  									<div class="clearfix">&nbsp;</div>
+
+  									<div class="form-group">
+
+  										<span class="input">
+                        <select class=" form-control selectgender" id="GESCH" data-required-message="Genero requerido" name="GESCH" >
+                          <option selected value ="">Por favor seleccione</option>
+                          <option value="1">Masculino</option>
+                          <option value="2">Femenino</option>
+                      </select>
+  											<label class="input_label input_label_styled" for="GESCH">
+  												<span class="input_label_content input_label_content_styled">Género</span>
+  											</label>
+  										</span>
+  									</div>
+  									<div class="clearfix">&nbsp;</div>
+
+  								</div>
+
+  								<div class="col-sm-6 columnf2">
+
+
+
+  									<div class="form-group">
+
+  										<span class="input">
+  											<input class="input_field input_field_styled form-control" type="text" id="STRAS" name="STRAS" />
+  											<label class="input_label input_label_styled" for="STRAS">
+  												<span class="input_label_content input_label_content_styled">Calle y número</span>
+  											</label>
+  										</span>
+  									</div>
+  									<div class="clearfix">&nbsp;</div>
+
+  									<div class="form-group">
+
+  										<span class="input">
+  											<input class="input_field input_field_styled form-control" type="text" id="LOCAT" name="LOCAT" />
+  											<label class="input_label input_label_styled" for="LOCAT">
+  												<span class="input_label_content input_label_content_styled">Complemento de Dirección</span>
+  											</label>
+  										</span>
+  									</div>
+  									<div class="clearfix">&nbsp;</div>
+
+  									<div class="form-group">
+
+  										<span class="input">
+  											<input class="input_field input_field_styled form-control" type="tel" id="TELNR" name="TELNR" />
+  											<label class="input_label input_label_styled" for="TELNR">
+  												<span class="input_label_content input_label_content_styled">No télefono</span>
+  											</label>
+  										</span>
+  									</div>
+  									<div class="clearfix">&nbsp;</div>
+
+  									<div class="form-group">
+
+  										<span class="input">
+  											<input class="input_field input_field_styled form-control" type="number" id="BETRG" name="BETRG" data-required-message="Sueldo requerido"  />
+  											<label class="input_label input_label_styled" for="BETRG">
+  												<span class="input_label_content input_label_content_styled">Sueldo</span>
+  											</label>
+  										</span>
+  									</div>
+  									<div class="clearfix">&nbsp;</div>
+
+  									<div class="form-group">
+  										<span class="input">
+  											<input class="input_field input_field_styled form-control" type="number" id="ICNUM" name="ICNUM" data-required-message="Numero de cedula requerido"  />
+  											<label class="input_label input_label_styled" for="ICNUM">
+  												<span class="input_label_content input_label_content_styled">Cédula</span>
+  											</label>
+  										</span>
+  									</div>
+  									<div class="clearfix">&nbsp;</div>
+
+  									<div class="form-group">
+  										<span class="input">
+  											<input class="input_field input_field_styled form-control" type="email" id="USRID" name="USRID" data-required-message="Correo requerido"  />
+  											<label class="input_label input_label_styled" for="USRID">
+  												<span class="input_label_content input_label_content_styled">Correo Electrónico</span>
+  											</label>
+  										</span>
+  									</div>
+  									<div class="clearfix">&nbsp;</div>
+
+  								</div>
+
+  							</div>
+
+  							<div class="container_btns">
+  								<div class="row">
+  									<div class="col-md-6"><button type="submit" class="btn btn-default save">Guardar</button></div>
+  									<div class="col-md-6"><button type="button" onclick="javascript:location.href='home.html'" class="btn btn-default cancel"> Cancelar</button></div>
+  								</div>
+
+
+  							</div>
+
+  						</form>
+
+
+
+  					</div>
+
+  				</div>
+  			</section>
+  		</section>
+  		<footer>
+  			<div class="row">
+  				<div class="col-md-4">
+  					<div class="footermenu">
+  						<ul>
+  							<li><a href="">Perfil</a></li>
+  							<li><a href="">Administración</a> </li>
+  							<li><a href="">Autoservicio</a> </li>
+  							<li><a href="">Solicitudes</a> </li>
+  							<li><a href="">Registro</a> </li>
+  							<li><a href="">Analíticas</a> </li>
+  							<li><a href="">Cerrar sesión</a> </li>
+  						</ul>
+  					</div>
+  				</div>
+  				<div class="col-md-5">
+							<div class="info">
+								<p>Contáctenos:</p>
+								<p>Dir</p>
+								<p>PBX: (1) 6xxxxxxx</p>
+								<p>E-mail: email@hrproject.com</p>
+							</div>
+  				</div>
+  				<div class="col-md-3">
+  					<div class="social">
+  						<ul class="social_icons">
+  							<li><a href=""><img src="images/facebook.png" /></a></li>
+  							<li><a href=""><img src="images/twitter.png" /></a></li>
+  						</ul>
+
+  					</div>
+  				</div>
+  			</div>
+  		</footer>
+      <div id="overlay" style="display:none">
+        <div class="loader-inner ball-pulse"><div></div><div></div><div></div></div>
+      </div>
+      <!-- Scripts -->
+  		<script src="js/modernizr.custom.js"></script>
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+  		<script src="js/jquery.dlmenu.js"></script>
+  		<script type="text/javascript" src="js/slick.min.js"></script>
+  		<script src="js/classie.js"></script>
+      <script type="text/javascript" src="js/function.js"></script>   
+      <script type="text/javascript" src="js/sweetalert.min.js"></script>   
+
+      <script type="text/javascript">
+        $(function(){
+
+          if (!Modernizr.touch || !Modernizr.inputtypes.date) {
+            $('.datepicker').datepicker({
+              showAnim: "fadeIn",
+              changeYear: true,
+              changeMonth: true,
+              yearRange: "1940:2015",
+              dateFormat: "yy-mm-dd"
+            });
+          }
+
+        
+
+        })
+       </script>
+
+		</body>
+
+		</html>

@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width">
+		<title>HR Project</title>
+
+		<!-- Stylesheet -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<link rel="stylesheet" type="text/css" href="css/style2.css">
+		<link rel="stylesheet" type="text/css" href="css/component.css">
+		<link rel="stylesheet" type="text/css" href="css/slick.css"/>
+		<link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+
+		<!-- Font -->
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900' rel='stylesheet' type='text/css'>
+
+		<!--[if IE]>
+  		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+</head>
+
+<body onload="javascript:employeeInfo();">
+	<header class="header">
+		<div class="row">
+			<nav class="navbar navbar-default">
+			  	<div class="container-fluid">
+			    	<div class="col-md-4">
+					    <div class="navbar-header">
+					    	<!-- Brand --> 
+					      	<a class="navbar-brand" href="home.html">
+                                <span class="logo-title">HR project</span>
+                              </a>
+					    </div>
+					  </div>
+			    	<div class="col-md-8">
+
+			    		<!-- Menu responsive-->
+
+							<div id="dl-menu" class="dl-menuwrapper">
+								<button class="dl-trigger">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+								<ul class="dl-menu">
+                                    <li><a href="home.html">Home</a></li>
+									<li><a href="#">Perfil</a></li>
+									<li>
+										<a href="#">Administración</a>
+										<ul class="dl-submenu">
+											<li><a href="#">Crear empresa</a></li>
+											<li><a href="empleado.html">Crear empleado</a></li>
+											<li><a href="nomina.html">Comprobante de Nómina</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div><!-- /dl-menuwrapper -->
+
+						<div class="collapse navbar-collapse" id="menu">
+						  	<ul class="nav navbar-nav">
+                                <li class="active"><a href="home.html">Home <span class="sr-only">(current)</span></a></li>
+						    	<li><a href="#">Perfil</a></li>
+						    	<li class="dropdown">
+						      		<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Administración </a>
+									<ul class="dropdown-menu" role="menu">
+										<li><a href="#">Crear empresa</a></li>
+										<li><a href="empleado.html">Crear empleado</a></li>
+										<li><a href="nomina.html">Comprobante de Nómina</a></li>
+									</ul>
+						    	</li>
+					      	</ul>
+					    </div>
+					</div>
+			  	</div>
+			</nav>
+
+			
+	</header>
+	<section id="employee">
+		<div class="container">
+		<div class="head-nomina col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+                <h1>Comprobante de nómina</h1>
+                <hr>
+                
+                <div class="col-xs-12">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <div  class="row dato-cab">
+                                Nombre del Empleado
+                            </div>
+                        </div>
+                        <div class="col-xs-6">
+                            <div id="emp_name" class="row dato-cab">
+                                Employee name
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-xs-12">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <div class="row dato-cab">
+                                Identificación
+                            </div>
+                        </div>
+                        <div class="col-xs-6">
+                            <div id="emp_id"class="row dato-cab">
+                                CC xxxxxx
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-xs-12">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <div class="row dato-cab">
+                                Sueldo básico
+                            </div>
+                        </div>
+                        <div class="col-xs-6">
+                            <div id="emp_sal" class="row dato-cab">
+                                1'000.000
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-xs-12 col-sm-10 col-sm-offset-1 cont-com-nomina">
+                    <hr class="linea">
+            </div>
+            
+            <div class="cont-com-nomina col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1">
+
+                    <div id="cont1" class="col-xs-12 col-sm-6">
+                        <div class="col-xs-12 dato-cab">
+                                <div class="col-xs-8">
+                                    <div class="row">
+                                        Días trabajados
+                                    </div>
+                                </div>
+                                <div class="col-xs-4">
+                                    <div class="row">
+                                        30
+                                    </div>
+                                </div>
+                        </div>
+
+                        <div class="col-xs-12 dato-cab">
+                                <div class="col-xs-8">
+                                    <div class="row">
+                                        Horas trabajadas
+                                    </div>
+                                </div>
+                                <div class="col-xs-4">
+                                    <div class="row">
+                                        120
+                                    </div>
+                                </div>
+                        </div>
+
+                        <div class="col-xs-12 dato-cab">
+                                <div class="col-xs-8">
+                                    <div class="row">
+                                        Jornada laboral
+                                    </div>
+                                </div>
+                                <div class="col-xs-4">
+                                    <div class="row">
+                                        Diurna
+                                    </div>
+                                </div>
+                        </div>
+
+                        <div class="col-xs-12 dato-cab">
+                                <div class="col-xs-8">
+                                    <div class="row">
+                                        Sueldo devengado
+                                    </div>
+                                </div>
+                                <div class="col-xs-4">
+                                    <div class="row">
+                                        $ 1.800.000
+                                    </div>
+                                </div>
+                        </div>
+                        
+                        <div class="col-xs-12 dato-cab">
+                                <div class="col-xs-8">
+                                    <div class="row">
+                                        Horas extras
+                                    </div>
+                                </div>
+                                <div class="col-xs-4">
+                                    <div class="row">
+                                        0
+                                    </div>
+                                </div>
+                        </div>
+                        
+                        <div class="col-xs-12 dato-cab">
+                                <div class="col-xs-8">
+                                    <div class="row">
+                                        Auxilio de transporte
+                                    </div>
+                                </div>
+                                <div class="col-xs-4">
+                                    <div class="row">
+                                        $100.000
+                                    </div>
+                                </div>
+                        </div>
+                        
+                        <div class="col-xs-12 dato-cab">
+                                <div class="col-xs-8">
+                                    <div class="row">
+                                        Bonificación extralegal
+                                    </div>
+                                </div>
+                                <div class="col-xs-4">
+                                    <div class="row">
+                                        $200.000
+                                    </div>
+                                </div>
+                        </div>
+                        
+                        <div class="col-xs-12 dato-cab">
+                                <div class="col-xs-8">
+                                    <div class="row">
+                                        <b>Total devengado</b>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4">
+                                    <div class="row">
+                                        <b>$2.600.000</b>
+                                    </div>
+                                </div>
+                        </div>
+                        
+                    </div>
+                
+                <div id="cont2" class="col-xs-12 col-sm-6">
+                    <div class="col-xs-12 dato-cab">
+                                <div class="col-xs-8">
+                                    <div class="row">
+                                        Aportes EPS
+                                    </div>
+                                </div>
+                                <div class="col-xs-4">
+                                    <div class="row">
+                                        $32.000
+                                    </div>
+                                </div>
+                        </div>
+
+                        <div class="col-xs-12 dato-cab">
+                                <div class="col-xs-8">
+                                    <div class="row">
+                                        Aportes adicionales EPS
+                                    </div>
+                                </div>
+                                <div class="col-xs-4">
+                                    <div class="row">
+                                        $32.000
+                                    </div>
+                                </div>
+                        </div>
+
+                        <div class="col-xs-12 dato-cab">
+                                <div class="col-xs-8">
+                                    <div class="row">
+                                        Aporte pensión
+                                    </div>
+                                </div>
+                                <div class="col-xs-4">
+                                    <div class="row">
+                                        $32.000
+                                    </div>
+                                </div>
+                        </div>
+
+                        <div class="col-xs-12 dato-cab">
+                                <div class="col-xs-8">
+                                    <div class="row">
+                                        Aporte voluntario
+                                    </div>
+                                </div>
+                                <div class="col-xs-4">
+                                    <div class="row">
+                                        $0
+                                    </div>
+                                </div>
+                        </div>
+                        
+                        <div class="col-xs-12 dato-cab">
+                                <div class="col-xs-8">
+                                    <div class="row">
+                                        F. Solidaridad pensional
+                                    </div>
+                                </div>
+                                <div class="col-xs-4">
+                                    <div class="row">
+                                        $0
+                                    </div>
+                                </div>
+                        </div>
+                        
+                        <div class="col-xs-12 dato-cab">
+                                <div class="col-xs-8">
+                                    <div class="row">
+                                        Aportes AFC
+                                    </div>
+                                </div>
+                                <div class="col-xs-4">
+                                    <div class="row">
+                                        $32.000
+                                    </div>
+                                </div>
+                        </div>
+                        
+                        <div class="col-xs-12 dato-cab">
+                                <div class="col-xs-8">
+                                    <div class="row">
+                                        Préstamos
+                                    </div>
+                                </div>
+                                <div class="col-xs-4">
+                                    <div class="row">
+                                        $0
+                                    </div>
+                                </div>
+                        </div>
+                        
+                        <div class="col-xs-12 dato-cab">
+                                <div class="col-xs-8">
+                                    <div class="row">
+                                        <b>Total deducciones</b>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4">
+                                    <div class="row">
+                                        <b>$128.000</b>
+                                    </div>
+                                </div>
+                        </div>
+                        
+                    </div>
+            </div>
+            
+                            
+                <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+                    <hr class="linea">
+                </div>
+            
+            <div class="cont-com-nomina col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
+                  <div class="col-xs-8">
+                    <div class="row">
+                       <b>Total deducciones</b>
+                    </div>
+                  </div>
+                  <div class="col-xs-4">
+                    <div class="row">
+                        <b>$128.000</b>
+                    </div>
+                  </div>
+            </div>
+	</div>
+	<div class="container">
+		<div class="row">
+ 			<div class="col-md-12"><a id="download" download="reporte" class="btn btn-default savepdf">Guardar PDF</a></div>
+ 		</div>
+	</div>
+	</section>
+	</section>
+	<footer>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="footermenu">
+					<ul>
+						<li><a href="">Perfil</a></li>
+						<li><a href="">Administración</a> </li>
+						<li><a href="">Autoservicio</a> </li>
+						<li><a href="">Solicitudes</a> </li>
+						<li><a href="">Registro</a> </li>
+						<li><a href="">Analíticas</a> </li>
+						<li><a href="">Cerrar sesión</a> </li>
+					</ul>
+				</div>
+			</div>
+  			<div class="col-md-5">
+                <div class="info">
+                    <p>Contáctenos:</p>
+                    <p>Dir</p>
+                    <p>PBX: (1) 6xxxxxxx</p>
+                    <p>E-mail: email@hrproject.com</p>
+                </div>
+  			</div>
+  			<div class="col-md-3">
+  				<div class="social">
+  					<ul class="social_icons">
+  						<li><a href=""><img src="images/facebook.png" /></a></li>
+  						<li><a href=""><img src="images/twitter.png" /></a></li>
+  					</ul>
+
+  				</div>
+  			</div>
+		</div>
+	</footer>
+   
+    <!-- scripts -->
+	<script src="js/modernizr.custom.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="js/jquery.dlmenu.js"></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>	
+	<script src="js/classie.js"></script>
+	<script type="text/javascript" src="js/function.js"></script>    	
+    
+</body>
+
+</html>

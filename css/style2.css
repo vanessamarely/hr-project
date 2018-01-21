@@ -1,0 +1,155 @@
+/**
+ * Chunky 3D Web Buttons
+ *
+ * Inspiration was taken from:
+ * - http://www.premiumpixels.com/freebies/chunky-3d-webbuttons-psd/
+ */
+ 
+/**
+ * Shadow
+ */
+
+
+/**
+ * Grey
+ */
+a.button {
+    -moz-box-shadow: inset 0 0 0 1px #63ad0d;
+    -webkit-box-shadow: inset 0 0 0 1px #63ad0d;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    background: #3859a0;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#4880b9), to(#3859a0));
+    background: -moz-linear-gradient(#4880b9, #3859a0);
+    background: linear-gradient(#4880b9, #3859a0);
+    border: none;
+    border-bottom: solid 3px #103c93;
+    border-radius: 3px;
+    box-shadow: inset 0 0 0 1px #3859a0;
+    color: #FFF;
+    display: inline-block;
+    font: 12px Arial, Helvetica, Clean, sans-serif;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+}
+    
+a.button:hover {
+    background: #3859a0;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#4880b9), to(#3859a0));
+    background: -moz-linear-gradient(#4880b9, #3859a0);
+    background: linear-gradient(#4880b9, #3859a0);
+    border: none !Important;
+    border-bottom: solid 3px #103c93 !Important;
+    box-shadow: inset 0 0 0 1px #3859a0; }
+    
+a.button:active {
+    background: #3859a0;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#4880b9), to(#4880b9));
+    background: -moz-linear-gradient(#4880b9, #4880b9);
+    background: linear-gradient(#4880b9, #4880b9);
+    border: none;
+    box-shadow: inset 0 10px 15px 0 #4880b9;
+    top:2px;}
+
+a.button img{
+    width: 100%;
+    display: block;
+}
+
+
+#notificaciones{
+    margin: 10% auto 0 auto;
+    width: 60%;
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    align-items: stretch;
+    -webkit-align-items: stretch;
+    -moz-align-items: stretch;
+}
+
+#notificaciones #box-not{
+    width: 24%;
+    background: #DF7E37;
+    text-align: center;
+    color: #fff;
+    padding: 5%;
+    font-size: 1.2em;
+}
+
+#notificaciones .box-info{
+    position: relative;
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    text-align: center;
+    background: #E5E5E7;
+    border-left: 2px solid #fff;
+}
+
+.box-info div:nth-child(1){
+    font-size: 1.2em;
+    padding: 5%;
+}
+
+.box-info div:nth-child(2){
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    
+}
+
+
+
+/** COMPROBANTE DE NOMINA **/
+
+
+#nomina{
+    /*margin-top: 5%;*/
+}
+
+h1{
+    text-align: center;
+    font-size: 1.4em;
+}
+
+.head-nomina{
+    padding: 0 8%;
+}
+
+
+.dato-cab{
+    padding: 2% 0;
+}
+
+.linea{
+    background: #01B0DB;
+    color: #01B0DB;
+    height: 1px;
+}
+
+@media screen and (max-width:768px){
+    #cont2{
+        margin-top: 4%;
+    }
+}
+
+.cont-com-nomina {
+    display: none;
+}
+
+
+
+
+
